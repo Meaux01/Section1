@@ -121,3 +121,46 @@ nums.sort() // used to put them in order from small to large
 // nums.length/2 gives you 12.5 if you round down you get 12 and that will give you the index to pull and then use slice to pull out the number
 console.log(nums.slice(12,13))
 ////////////////////////////////
+
+////////////////////////////////
+// Hungry for More
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "GA hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+  ];
+  
+  // Thom's closet is more complicated. Check out this nested data structure!!
+  const thomsCloset = [
+    [
+      // These are Thom's shirts
+      "grey button-up",
+      "dark grey button-up",
+      "light blue button-up",
+      "blue button-up",
+    ],[
+      // These are Thom's pants
+      "grey jeans",
+      "jeans",
+      "PJs"
+    ],[
+      // Thom's accessories
+      "wool mittens",
+      "wool scarf",
+      "raybans"
+    ]
+  ];
+  let kristynsShoe = kristynsCloset[0]
+  thomsCloset[2].push(kristynsShoe)
+  console.log(thomsCloset)
+  let firstOutfit = `Kristyns outfit consist of ${kristynsCloset[1]}, ${kristynsCloset[3]}, ${kristynsCloset[4]}.`
+  let secondOutfit = `Thoms is going to borrow Kristyn's ${kristynsCloset[3]}, and wear it with ${thomsCloset[1][1]}, and ${thomsCloset[2][2]}`
+  let thirdOutfit = `Optional for both of us would be ${thomsCloset[0][0]}, ${thomsCloset[1][1]}, and ${kristynsCloset[5]}`
+  console.log(firstOutfit)
+  console.log(secondOutfit)
+  console.log(thirdOutfit)
+////////////////////////////////
