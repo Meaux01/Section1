@@ -78,12 +78,12 @@ favMovies.reverse()
 // console.log(favMovies)
 favMovies.shift()
 favMovies.unshift("Guardians of th Galaxy")
-console.log(favMovies.indexOf('Django Unchained'))
+// console.log(favMovies.indexOf('Django Unchained'))
 favMovies.splice(15,1, "Avatar")
-console.log(favMovies.length)
+// console.log(favMovies.length)
 const secondHalf = favMovies.slice(9,18)
-console.log(favMovies)
-console.log(favMovies.indexOf("Fast and Furious"))
+// console.log(favMovies)
+// console.log(favMovies.indexOf("Fast and Furious"))
 ////////////////////////////////
 
 ////////////////////////////////
@@ -94,15 +94,24 @@ const whereIsWaldo = [
   ["Lucinda", "Jacc", "Neff", "Snoop"],
   ["Petunia", ["Baked Goods", "Waldo"]],
 ];
-whereIsWaldo.splice(1,1)
-console.log(whereIsWaldo)
-whereIsWaldo[1].splice(2,1,"No One")
-console.log(whereIsWaldo)
-console.log(whereIsWaldo[2][1][1])
+// whereIsWaldo.splice(1,1)
+// console.log(whereIsWaldo)
+// whereIsWaldo[1].splice(2,1,"No One")
+// console.log(whereIsWaldo)
+// console.log(whereIsWaldo[2][1][1])
 ////////////////////////////////
 
 ////////////////////////////////
 //  Excited Kitten
+const kittenTalk = ["...human...why you taking pictures of me?...", "...the catnip made me do it...", "...why does the red dot always get away..."]
+let meow = Math.floor(Math.random()*3);
+for (let i = 0; i < 20; i++) {
+  if (i % 2 === 0) {
+    console.log(kittenTalk[meow]);
+  } else {
+    console.log("Love me, pet me! HSSSSSS!");
+  }
+}
 ////////////////////////////////
 
 ////////////////////////////////
