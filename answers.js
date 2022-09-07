@@ -116,4 +116,8 @@ for (let i = 0; i < 20; i++) {
 
 ////////////////////////////////
 //  Find the Median
+const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+nums.sort() // used to put them in order from small to large
+// nums.length/2 gives you 12.5 if you round down you get 12 and that will give you the index to pull and then use slice to pull out the number
+console.log(nums.slice(12,13))
 ////////////////////////////////
