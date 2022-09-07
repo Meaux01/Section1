@@ -68,6 +68,22 @@ for (const names of ninjaTurtles) {
 
 ////////////////////////////////
 // Methods, Revisited
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+console.log(favMovies.indexOf('Titanic'))
+favMovies.sort()
+// console.log(favMovies)
+favMovies.pop()
+favMovies.push("Guardians of th Galaxy")
+favMovies.reverse()
+// console.log(favMovies)
+favMovies.shift()
+favMovies.unshift("Guardians of th Galaxy")
+console.log(favMovies.indexOf('Django Unchained'))
+favMovies.splice(15,1, "Avatar")
+console.log(favMovies.length)
+const secondHalf = favMovies.slice(9,18)
+console.log(favMovies)
+console.log(favMovies.indexOf("Fast and Furious"))
 ////////////////////////////////
 
 ////////////////////////////////
