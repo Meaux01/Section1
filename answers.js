@@ -163,4 +163,12 @@ const kristynsCloset = [
   console.log(firstOutfit)
   console.log(secondOutfit)
   console.log(thirdOutfit)
+  
+for (let i = 0; i < kristynsCloset.length; i++) {
+    const element = kristynsCloset[i];
+    console.log(`WHIRR: Now washing ${element}`)
+}
+
+console.log(`I have this ${thomsCloset[0].length} shirts, ${thomsCloset[1].length} pants, ${thomsCloset[2].length} accessories.`)
+
 ////////////////////////////////
